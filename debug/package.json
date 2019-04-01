@@ -1,0 +1,9 @@
+{
+  "name": "rupi-debug",
+  "amdName": "rupiDebug",
+  "version": "1.0.0",
+  "main": "dist/debug.js",
+  "module": "dist/debug.mjs",
+  "umd:main": "dist/debug.umd.js",
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "rupi-hooks",
+  "amdName": "rupiHooks",
+  "version": "1.0.0",
+  "main": "dist/hooks.js",
+  "module": "dist/hooks.mjs",
+  "umd:main": "dist/hooks.umd.js",
+  "license": "MIT"
+}

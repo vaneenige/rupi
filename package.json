@@ -1,0 +1,30 @@
+{
+  "name": "rupi",
+  "amdName": "rupi",
+  "version": "1.0.0",
+  "description": "An alternative to Preact with the same syntax, size and functionality.",
+  "main": "dist/rupi.js",
+  "module": "dist/rupi.module.js",
+  "umd:main": "dist/rupi.umd.js",
+  "source": "src/index.js",
+  "license": "MIT",
+  "types": "src/index.d.ts",
+  "scripts": {
+    "start": "rm -rf node_modules && npm install && npm-run-all --parallel update:* && npm-run-all --parallel structure:* && rm -rf node_modules",
+    "update:core": "rm -rf dist && rm -rf src && mv node_modules/preact/dist/ dist && mv node_modules/preact/src/ src",
+    "update:hooks": "rm -rf hooks/dist && mv node_modules/preact/hooks/dist hooks/dist",
+    "update:compat": "rm -rf compat/dist && mv node_modules/preact/compat/dist compat/dist",
+    "update:debug": "rm -rf debug/dist && mv node_modules/preact/debug/dist debug/dist",
+    "structure:rename": "renamer --find preact --replace rupi \"**\"",
+    "structure:replace": "replace \"preact\" \"rupi\" ./**/**/** -r --exclude=\"*.json\""
+  },
+  "author": "Colin van Eenige",
+  "dependencies": {
+    "preact": "next"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "renamer": "^1.1.1",
+    "replace": "^1.1.0"
+  }
+}

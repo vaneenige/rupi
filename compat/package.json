@@ -1,0 +1,9 @@
+{
+  "name": "rupi-compat",
+  "amdName": "rupiCompat",
+  "version": "1.0.0",
+  "main": "dist/compat.js",
+  "module": "dist/compat.mjs",
+  "umd:main": "dist/compat.umd.js",
+  "license": "MIT"
+}
