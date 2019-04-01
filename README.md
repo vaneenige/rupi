@@ -2,7 +2,7 @@
 
 ![npm](https://img.shields.io/badge/npm-next-FF5252.svg)
 ![build](https://img.shields.io/badge/build-perfect-FF4081.svg)
-![coverage](https://img.shields.io/badge/coverage-100%-E040FB.svg)
+![coverage](https://img.shields.io/badge/coverage-100-E040FB.svg)
 ![license](https://img.shields.io/badge/license-MIT-7C4DFF.svg)
 ![dependencies](https://img.shields.io/badge/dependencies-preact-536DFE.svg)
 ![performance](https://img.shields.io/badge/performance-blazing-40C4FF.svg)
